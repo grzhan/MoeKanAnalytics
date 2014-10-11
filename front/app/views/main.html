@@ -1,0 +1,41 @@
+
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div> -->
+
+<div class="headbar">
+  <img tooltip="Pixiv ID: 38789545" src="images/38789545.jpg" alt="" class="img-responsive">
+</div>
+
+<div class="searchbar">
+  <div class="input-group input-group-primary input-group-lg">
+    <input type="text" id="searchbox" class="form-control search-query"
+    placeholder="请输入你要查询的舰娘名" ng-model="kanname"
+    typeahead="kname for kname in knames | filter: $viewValue | limitTo:8">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+  <div class="labelbox">
+    <span class="label label-info" ng-repeat="kname in hotkans" ng-click="setInputKan(kname)">{{kname}}</span>
+  </div>
+</div>
+<div class="row marketing">
+<!--   <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+ --></div>
